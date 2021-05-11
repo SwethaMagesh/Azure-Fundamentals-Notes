@@ -2,6 +2,7 @@
 ## *Module 1 - 10 units*
 
 [Microsoft Docs for Module 1](https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/)
+[Microsoft Docs for LP2](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/)
 ---
 ### UNIT 1: Introduction
 - ***Tailwind needs***
@@ -200,7 +201,7 @@
 ---
 
 ### UNIT 9: Knowledge check
-- ![image](https://user-images.githubusercontent.com/43994542/117778553-6323f100-b25b-11eb-81b3-03865b04b2b7.png)
+![image](https://user-images.githubusercontent.com/43994542/117778553-6323f100-b25b-11eb-81b3-03865b04b2b7.png)
 
 
 ---
