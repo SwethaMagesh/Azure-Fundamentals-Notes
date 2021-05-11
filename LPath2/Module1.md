@@ -1,5 +1,7 @@
 # Explore Azure database and analytics services
 ## *Module 1 - 10 units*
+
+[Microsoft Docs for Module 1](https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/)
 ---
 ### UNIT 1: Introduction
 - ***Tailwind needs***
@@ -142,3 +144,71 @@
         >Sharding is the process of **breaking up large tables into smaller chunks called shards** that are spread across multiple servers. A shard is essentially a **horizontal data partition** that contains a subset of the total data set, and hence is responsible for serving a portion of the overall workload.
     - great performance even when workload over 100GB data
     - Support for: *multi-tenant applications, real-time operational analytics, and high throughput transactional workloads*
+
+---
+### UNIT 8: Explore Big Data and Analytics
+- *Tailwind needs*
+    - GPS tracker for all delivery vehicles. Real time tracking data from sensors, weather n so on to primary data center
+    - Aim: To get trends - ***look at several years data and find when there is a spike and need additional staff hires. Predict spikes during holidays etc.***
+    - Your in-depth analysis is req for CTO to manage spikes
+- *BIG DATA*
+    - different forms and formats, large volume. 
+    - Difficult to make sense of
+- *Dealing with large data*
+    - Open source cluster technologies are now developed.
+    - MS Azure products
+        ```
+        Azure Synapse Analytics,
+        Azure HDInsight,
+        Azure Databricks,
+        Azure Data Lake Analytics.
+        ```
+---
+- ***[Azure Synapse Analytics](https://docs.microsoft.com/en-us/azure/sql-data-warehouse/)*** 
+    - `formerly Azure SQL Data Warehouse`
+- *Intro*
+    - Enterprise Data warehousing + Big data analytics
+    - Query in terms of 
+        - *Serverless* or
+        - *provisioned resources at scale*
+    - Unified experience for immediate ***BI and ML needs***
+---
+- ***[Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)***  
+    - Open-source Analytics service for Enterprises
+    - Easy, fast and cost effective to process massive data
+    - Support popular Open source frameworks and cluster types like
+        ```
+        Apache Spark, Apache Hadoop, Apache Kafka, Apache HBase, Apache Storm, and Machine Learning Services.
+        ```
+    - Scenarios supported: 
+        - Extraction, transformation, loading (ETL)
+        - Warehousing 
+        - ML
+        - IoT
+- ***[Azure Databricks](https://azure.microsoft.com/services/databricks/)*** 
+    - Unlock insights from Data nad build AI solutions
+    - Easy to 
+        - ***set up Apache Spark env, autoscale and collaborate in interactive workspace***
+    - Programming Lang: **Python, Scala, R, Java, SQL, libraries** such as *TensorFlow, PyTorch, and scikit-learn.*
+- ***[Azure Data Lake Analytics](https://azure.microsoft.com/services/data-lake-analytics/)***  
+    - On-demand analytics job service to simplify big data
+    - Write queries to tranform and extract insights 
+        - instead of *deploy, config and tune hardware*
+    - Scale
+        - *by setting dial for amt of power needed*
+    - Pay as it is running = cost effective
+---
+
+### UNIT 9: Knowledge check
+- ![image](https://user-images.githubusercontent.com/43994542/117778553-6323f100-b25b-11eb-81b3-03865b04b2b7.png)
+
+
+---
+### UNIT 10: Summary
+- Azure services like
+    - SQL DB, MYSQL, POSTGRES - FOR MIGRATING (WHILE PRESERVING DEV AND DB ADMIN STRENGTHS)
+    - COSMOS DB - APIs FOR
+        - MONGODB, CASSANDRA, TABLES, GREMLIN
+    - BIG DATA AND ANALYTICS
+        - SYNAPSE, DATALAKE, DATABRICKS, HDInsight
+- Links to module for DB specific learning path
