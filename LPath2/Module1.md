@@ -1,8 +1,8 @@
 # Explore Azure database and analytics services
 ## *Module 1 - 10 units*
 
-[Microsoft Docs for Module 1](https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/)
-[Microsoft Docs for LP2](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/)
+- [Microsoft Docs for Module 1](https://docs.microsoft.com/en-us/learn/modules/azure-database-fundamentals/)
+- [Microsoft Docs for LP2](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/)
 ---
 ### UNIT 1: Introduction
 - ***Tailwind needs***

@@ -1,8 +1,8 @@
 # Explore Azure Compute Services
 ## *Module 2 - 9 units*
 
-[Microsoft Docs for Module 2](https://docs.microsoft.com/en-us/learn/modules/azure-compute-fundamentals/)
-[Microsoft Docs for LP2](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/)
+- [Microsoft Docs for Module 2](https://docs.microsoft.com/en-us/learn/modules/azure-compute-fundamentals/)
+- [Microsoft Docs for LP2](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/)
 ---
 ### UNIT 1: Introduction
 - *Imagine you're dev lead in Tailwind Traders*
@@ -75,3 +75,81 @@
 - *Typically used:* When total control over OS or env needed
     - Customise all S/W on VM 
     - When running custom S/W or custom hosting configurations
+- *Flexibility - no need to buy and maintain physical hardware.*
+    - *We need to configure, update and manage the s/w on VM*
+- **Selecting a preconfigured VM image** is most important
+    - image is a template to create VM
+    - Template already has OS and other s/w like  *dev tools, web hosting env etc*
+---
+***Eg. when to use VM*** 
+```
+- Test and development
+    - quick to create different OS n app configurations
+    - easy to delete when we don't need them
+- Run app on cloud
+    - Economic benefits - to run app on public cloud vs Traditional infra
+    - Shut down VMs quick, when we don't need them
+    - Start up VMs to meet sudden increase in need
+- Extend Datacenter to cloud
+    - Create Virtual Network in Azure
+    - Add VMs to Virtual network
+    - Less expensive to deploy than on on-prem (EG: SHAREPOINT like apps)
+- Disaster Recovery
+    - IaaS based approach to disaster recovery
+    - If primary datacenter fails, create VMs on azure for critical apps, then shut down after primary datacenter resumes
+```
+---
+***MOVE TO CLOUD WITH VMs*** 
+- LIFT N SHIFT
+    - *Move a phy server to cloud*
+    - Just create image for phy server and host it on VM with little or no changes
+    - Must maintain VM though, - *update the OS and software it runs*
+
+***SCALE VMs in AZURE*** 
+    1. VM Scale Sets
+    1. Azure Batch
+
+**VM Scale Sets**
+: Group of identical load balanced VMs. - High *availability*
+- Eg. for scientist to upload and process Astronomy images
+- Normally duplicate VM => *config additional service to route requests between multiple instances* 
+- VM Scale sets do that automatically in response to *demand or schedule*
+- Service: *Big data, compute, container workloads*
+
+**Azure Batch**
+: Highly parallel and High performance computing batch jobs - scaling tens, hundreds or thousands of VMs
+
+- BATCH does
+    - Starts a pool of compute VMs
+    - Installs apps n staging data
+    - Runs jobs with as many tasks as you have
+    - Identify failure
+    - Requeue work
+    - Scales down as soon as work is complete
+- *Service: you need raw computing power or supercomputer-level compute power*
+
+---
+### UNIT 4: When to use Azure Container Instances or Azure Kubernetes Service
+- *INTRO*
+    - VM cons => Limited to single OS per VM
+    - Multiple instances of an app on single host machine => Containers
+- ***Containers*** 
+    - Virtualisation Environment
+    - We can run ***multiple containers on a single host (phy or virtual)*** like multiple VM on a single phy host
+    - Most popular container engine: ***docker*** supported by Azure
+
+| VM | Container |
+|---|---|
+|An instance of an OS that you can connect to and manage  | Lightweight, designed to create, scale and stop dynamically |
+| it's possible to create and deploy virtual machines as application demand increases | allow you to respond to changes on demand - quick to restart on crash |
+
+--- 
+Video on comparison of VM, containers
+
+|VM|Containers|
+|---|---|
+|Takes long start up time (APP PLUS OS) | Quick to start|
+|Virtualised on hardware abstractions - CPU, storage, RAM| Virtualised on OS layer|
+|When you need ***complete control*** |When you need ***portability, performance*** |
+||Easy to develop. Has Orchestrator like Kubernetes to manage|
+|One machine with many OS - needs several VMs| One machine with different OS or environment for each app - Needs only one VM now|
