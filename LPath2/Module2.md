@@ -153,3 +153,6 @@ Video on comparison of VM, containers
 |When you need ***complete control*** |When you need ***portability, performance*** |
 ||Easy to develop. Has Orchestrator like Kubernetes to manage|
 |One machine with many OS - needs several VMs| One machine with different OS or environment for each app - Needs only one VM now|
+||Dev environment is similar to production environment in containers|
+
+
