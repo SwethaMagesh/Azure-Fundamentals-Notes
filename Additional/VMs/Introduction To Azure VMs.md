@@ -20,8 +20,23 @@
             - `Be careful about resizing production VMs - they will be rebooted automatically which can cause a temporary outage and change some configuration settings such as the IP address` 
 
     - Understanding the pricing model
+        - `COMPUTE COST` Hourly pricing - Charge as per minutes used
+        - Windows OS costly compared to Linux - `can reuse Win Licences using Hybrid Benefit`
+        - 2 options for COMPUTE:
+            - PAY AS YOU GO
+            - Reserved Virtual Machine Instances (RI)
+                - ***Cheaper for long run - 1 to 3 years and predictable budget*** 
+        - `STORAGE COST`: even if the VM is stopped/deallocated and you aren’t billed for the running VM, you will be charged for the storage used by the disks.
+    
     - Storage for the VM
+        - The data for each VHD is held in Azure Storage as **page blobs**, which allows Azure to allocate space only for the storage you use. It's also how your storage cost is measured; you pay for the storage you are consuming.
+        - Two options for managing the relationship between the storage account and each VHD. You can choose either **unmanaged disks or managed disks.**
+            - ***MANAGED DISKS:***  putting the burden of managing the storage accounts onto Azure. You specify the size of the disk, up to 4 TB, and Azure creates and manages both the disk and the storage. 
+            - ***UNMANAGED:*** - you are responsible for the storage accounts that are used to hold the VHDs that correspond to your VM disks  
     - Select an operating system
+        - More than just base OS images, you can search the Azure Marketplace for more sophisticated install images that include the OS and popular software tools installed for specific scenarios. *EG: Wordpress: LAMP fully*
+        - only 64bit OS SUPPORTED
+        - if you can't find a suitable OS image, you can create your disk image with what you need, upload it to Azure storage, and use it to create an Azure VM.
 
 ### [Manage the availability of your Azure VMs](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-virtual-machines/5-high-availability)
 
@@ -47,6 +62,17 @@
     -  Hyper-V, VMware, and
     -  Physical servers in your on-premises infrastructure
 - ***Business continuity and disaster recovery (BCDR) strategy*** 
+
+### [BACKUP](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-virtual-machines/6-backup-services)
+- ***Azure Backup*** is a backup as a service offering that protects physical or virtual machines no matter where they reside: on-premises or in the cloud.
+- Better than traditional back up solutions
+- Components
+    - Azure Backup agent
+    - System Center Data Protection Manager
+    - Azure Backup Server
+    - Azure Backup VM extension
+- Uses recovery services vault - With the vault in place, you can select the machines to back up, and define a ***backup policy*** (when snapshots are taken and for how long they’re stored).
+- LOTS of ADVANTAGES - refer unit link
 
 
 
