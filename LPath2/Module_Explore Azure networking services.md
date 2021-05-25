@@ -91,7 +91,7 @@
 - **Features and benefits**
 - Layer 3 connect b/w on prem and Microsoft Cloud
 - Connect to MS cloud across all regions
-	- ```
+	```
 	Microsoft Office 365
 	Microsoft Dynamics 365
 	Azure compute services, such as Azure Virtual Machines
