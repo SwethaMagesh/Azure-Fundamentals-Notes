@@ -12,15 +12,19 @@
 ### Unit 2: What is defense in depth?
 - prevent unauthorised access
 - Mechanism to slow advance of attack
+
+
 ![image](https://user-images.githubusercontent.com/43994542/119969754-950fb400-bfcc-11eb-8f53-217a8b2f1b9f.png)
+
+
 - Even if one layer is breached, one more layer is present to enforce security
-      1. Physical : At datacenter
-      2. Id and access: SSO and multi factor authentication
-      3. Perimeter: DDoS n firewalls to prevent attacks
-      4. Network: Deny by default - Prevent attack to spread to other resources
-      5. Compute: secure Access to VM
-      6. Application: App SDLC - introduce security
-      7. DATA: DB, disc in VM, SaaS, cloud storage
+    1. Physical : At datacenter
+    2. Id and access: SSO and multi factor authentication
+    3. Perimeter: DDoS n firewalls to prevent attacks
+    4. Network: Deny by default - Prevent attack to spread to other resources
+    5. Compute: secure Access to VM
+    6. Application: App SDLC - introduce security
+    7. DATA: DB, disc in VM, SaaS, cloud storage
 
 - **Security Posture:** 
   - confidentiality , integrity (hash or fingerprint) , and availability (DDoS) , known collectively as CIA
