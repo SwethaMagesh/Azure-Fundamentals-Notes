@@ -18,13 +18,13 @@
 
 
 - Even if one layer is breached, one more layer is present to enforce security
-    1. Physical : At datacenter
-    2. Id and access: SSO and multi factor authentication
-    3. Perimeter: DDoS n firewalls to prevent attacks
-    4. Network: Deny by default - Prevent attack to spread to other resources
-    5. Compute: secure Access to VM
-    6. Application: App SDLC - introduce security
-    7. DATA: DB, disc in VM, SaaS, cloud storage
+    1. **Physical** : At datacenter
+    2. **Id and access**: SSO and multi factor authentication
+    3. **Perimeter**: DDoS n firewalls to prevent attacks
+    4. **Network**: Deny by default - Prevent attack to spread to other resources
+    5. **Compute**: secure Access to VM
+    6. **Application**: App SDLC - introduce security
+    7. **DATA**: DB, disc in VM, SaaS, cloud storage
 
 - **Security Posture:** 
   - confidentiality , integrity (hash or fingerprint) , and availability (DDoS) , known collectively as CIA
@@ -48,13 +48,13 @@
   - **Inbound Destination Network Address Translation (DNAT)** support.
 
 - **What can I configure with Azure Firewall?**
-- App rules to define FQDNs - they can be accessed from a subnet
-- Network rules to define src address, protocol, dest port and dest address
-- NAT rules to define destination IP and ports 
+  - App rules to define FQDNs - they can be accessed from a subnet
+  - Network rules to define src address, protocol, dest port and dest address
+  - NAT rules to define destination IP and ports 
 
 - **Azure application gateway** - WAF - Web app firewall
--  WAF - centralised, inbound protection for ur web app from common exploits and vulnerabilities
--  Azure **Front door** n Azure **Content Delivery Network** = also provide WAF services
+  -  WAF - centralised, inbound protection for ur web app from common exploits and vulnerabilities
+  -  Azure **Front door** n Azure **Content Delivery Network** = also provide WAF services
 
 
 ---
@@ -85,8 +85,8 @@
 ### Unit 5: Filter network traffic using NSG
 - how to protect its internal networks on Azure.
 - **What are network security groups?**
-- Internal Firewall
-- Multiple **inbound, outbound security rules** (IP, port, Protocol) = _**Allow/ Deny**_
+  - Internal Firewall
+  - Multiple **inbound, outbound security rules** (IP, port, Protocol) = _**Allow/ Deny**_
 
  
  |Property|	Description|
@@ -99,15 +99,15 @@
 |Port Range|	A single port or range of ports.|
 |Action|	Allow or Deny.|
 
-- You can't remove the default rules, but you can override them by creating new rules with higher priorities.
+  - You can't remove the default rules, but you can override them by creating new rules with higher priorities.
 
 
 ---
 ### Unit 6: Exercise: Config network access using NSG
-- you configure network access to a virtual machine (VM) running on Azure
-- Linux VM, Nginx - web server
-- Create a NSG allowing inbound access on port 80
-- USE CLI this time
+  - you configure network access to a virtual machine (VM) running on Azure
+  - Linux VM, Nginx - web server
+  - Create a NSG allowing inbound access on port 80
+  - USE CLI this time
 ---
 ### Unit 7: Combine azure services
 - Secure perimeter
