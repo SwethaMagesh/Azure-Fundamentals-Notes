@@ -72,23 +72,59 @@
   - **DDoS Protection Standard** : only customer usage
     - Credit if scaled out due to DDoS
 - **What service tiers are available to DDoS Protection**
-- BASIC
-- STANDARD : ML algo,  specific to Azure VNET resources
+  - BASIC
+  - STANDARD : ML algo,  specific to Azure VNET resources
 
 - **What kinds of attacks can DDoS Protection help prevent**
-- Volumetric attack
-- Protocol attack
-- Resource layer attack (only with WAF)
+  - Volumetric attack
+  - Protocol attack
+  - Resource layer attack (only with WAF)
 
 
 ---
 ### Unit 5: Filter network traffic using NSG
-- 
+- how to protect its internal networks on Azure.
+- **What are network security groups?**
+- Internal Firewall
+- Multiple **inbound, outbound security rules** (IP, port, Protocol) = _**Allow/ Deny**_
+
+ 
+ |Property|	Description|
+ |---|---|
+|Name|	A unique name for the NSG.|
+|Priority|	A number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers.|
+|Source or Destination|	A single IP address or IP address range, service tag, or application security group.|
+|Protocol|	TCP, UDP, or Any.|
+|Direction|	Whether the rule applies to inbound or outbound traffic.|
+|Port Range|	A single port or range of ports.|
+|Action|	Allow or Deny.|
+
+- You can't remove the default rules, but you can override them by creating new rules with higher priorities.
+
+
 ---
 ### Unit 6: Exercise: Config network access using NSG
+- you configure network access to a virtual machine (VM) running on Azure
+- Linux VM, Nginx - web server
+- Create a NSG allowing inbound access on port 80
+- USE CLI this time
 ---
 ### Unit 7: Combine azure services
+- Secure perimeter
+- Secure network layer
+- Combine services
+  - NSG n Azure Firewall
+  - Azure app Gateway WAF n Azure firewall
+ 
 ---
 ### Unit 8: Knowledge check
+
+![image](https://user-images.githubusercontent.com/43994542/120076774-d371a580-c096-11eb-9d8c-93f0d9f83bc7.png)
+
+
 ---
 ### Unit 9: Summary
+>- Azure Firewall is a managed, cloud-based network security service that helps protect resources in Azure virtual networks.
+>- An Azure virtual network is similar to a traditional network that you'd operate in your own datacenter. It enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+>- A network security group (NSG) enables you to filter network traffic to and from Azure resources within a virtual network.
+>- Azure DDoS Protection helps protect Azure resources from DDoS attacks.
