@@ -97,7 +97,6 @@ One instance of Azure Load Balancer.
    - `Deploying two or more instances of an Azure virtual machine across two or more availability zones raises the virtual machine SLA to 99.99 percent.`
    - IN this case, adding VM to diff availability => causes Special order availability to 99.96%
  - **Include redundancy to increase availability**
- - **Very high performance is difficult to achieve**
    - Complex n expensive
  - **Very high performance is difficult to achieve**
 
