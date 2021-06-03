@@ -8,7 +8,7 @@
   - Store and access **sensitive information such as passwords and encryption keys** securely in Azure Key Vault.
   - Manage **dedicated physical servers** to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
 ---
-### Unit 2: Protect against security threats - Azure Security Center
+### Unit 2: Azure Security Center - Protect against security threats 
 >**Security posture** refers to an organization's overall cybersecurity strength and how well it can predict, prevent and respond to ever-changing cyberthreats.
 - Azure Security Center is a monitoring service that provides visibility of your security posture across all of your services, **both on Azure and on-premises**
 - **Features**
@@ -51,7 +51,7 @@
  
 
 ---
-### Unit 3: Detect and respond  - Azure Sentinel
+### Unit 3: Azure Sentinel - Protect against security threats 
 - **Security information and event management (SIEM)**
   - This aggregates from various sources
   - sources must support **Open standard logging format**
@@ -72,7 +72,7 @@
       - EG: Malicious IP access: 1. IT Ticketing system   `An issue tracking system is a computer software package that manages and maintains lists of issues` 2. Teams / Slack msg to Security analyst. 3. Block/ Ignore option for Network admin 
  
 ---
-### Unit 4: Store and manage secrets - Azure key vault
+### Unit 4: Azure key vault
 - sensitive information such as passwords, encryption keys, and certificates
 - Azure Key vault: access control and logging capabilities + single central location for an app
 - A **hardware security module (HSM)** is a physical computing device that safeguards and manages digital data
@@ -99,7 +99,7 @@
 ![image](https://user-images.githubusercontent.com/43994542/119966874-617f5a80-bfc9-11eb-82ce-3e13f462b5e7.png)
 
 ---
-### Unit 6: Host VM on dedicated hosts - Azure Dedicated Host
+### Unit 6: Azure Dedicated Host
 - Some organizations must follow regulatory compliance that requires them to be **the only customer using the physical machine that hosts their virtual machines**. 
 
 -   ![image](https://user-images.githubusercontent.com/43994542/119967352-e5394700-bfc9-11eb-9605-bcb4670d6c50.png)
